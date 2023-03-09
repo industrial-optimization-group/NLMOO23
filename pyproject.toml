@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nlmoo23"
+version = "0.1.0"
+description = "Codes for the Nonlinear Multiobjective Optimization course 2023"
+authors = ["Bhupinder Saini <bhupinder.s.saini@jyu.fi>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">3.9,<3.11"
+jupyterlab = "^3.6.1"
+desdeo = "^1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.254"
+
+[tool.ruff]
+extend-select = ["B", "E", "W", "C90", "N", "D", "UP", "TCH"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
